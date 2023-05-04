@@ -46,4 +46,8 @@ docker ps -a
 docker logs api-solid-pg
 docker logs api-solid-pg -f
 
+docker compose up -d
+docker compose stop // para
+docker compose down // para e apaga os containers
+
 ```
