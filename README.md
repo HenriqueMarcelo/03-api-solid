@@ -50,4 +50,7 @@ docker compose up -d
 docker compose stop // para
 docker compose down // para e apaga os containers
 
+cd prisma/vitest-environment-prisma/
+npm link
+
 ```
