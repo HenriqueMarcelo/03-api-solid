@@ -1,3 +1,3 @@
-import { expect, test } from 'vitest'
+import { test } from 'vitest'
 
 test('ok', () => {})
