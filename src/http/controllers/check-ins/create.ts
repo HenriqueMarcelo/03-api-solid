@@ -24,8 +24,8 @@ export async function create(request: FastifyRequest, reply: FastifyReply) {
   await checkInUseCase.execute({
     gymId,
     userId: request.user.sub,
-    userLatitude: longitude,
-    userLongitude: latitude,
+    userLatitude: latitude,
+    userLongitude: longitude,
   })
 
   return reply.status(201).send()
