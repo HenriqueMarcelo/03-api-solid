@@ -14,12 +14,12 @@ describe('Refrersh Token (e2e)', () => {
   it('should be able to refresh a token', async () => {
     await request(app.server).post('/users').send({
       name: 'John Doe',
-      email: 'johndoer@example.com',
+      email: 'johndoe@example.com',
       password: '123456',
     })
 
     const authResponse = await request(app.server).post('/sessions').send({
-      email: 'johndoer@example.com',
+      email: 'johndoe@example.com',
       password: '123456',
     })
 
